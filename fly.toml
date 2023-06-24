@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for fso-phonebook-joerhew on 2023-06-24T14:47:33-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "fso-phonebook-joerhew"
+primary_region = "yyz"
+
+[env]
+  PORT = "8080"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
